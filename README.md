@@ -4,7 +4,14 @@ mEMbrain is an interactive MATLAB-based software which wraps algorithms and func
 
 ## Requirements
 
-mEmbrain’s installation is straightforward and limited to a folder download. We ask the users to first make sure they have MATLAB installed on the computer they intend to use mEMbrain on. In particular, the users should make sure to have installed with MATLAB also the Computer Vision Toolbox, the Deep Learning Toolbox and the Parallel Computing Toolbox, and agree to install whatever dependencies these may have. Done from scratch, MATLAB's installation could take up to 30 minutes (often less). 
+mEmbrain’s installation is straightforward and limited to a folder download. We ask the users to first make sure they have MATLAB installed on the computer they intend to use mEMbrain on. In particular, the users should make sure to have installed with MATLAB also the following toolboxes:
+1. Computer Vision Toolbox
+2. Deep Learning Toolbox
+3. Image Processing Toolbox
+4. Parallel Computing Toolbox 
+5. Statistics and Machine Learning Toolbox
+
+Done from scratch, MATLAB's installation could take up to 30 minutes (often less). 
 
 
 ## Installation
