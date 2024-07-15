@@ -33,8 +33,8 @@ function [skeletonGT] = convertMembraneToSkeleton_noZeroPixel(I, filterSize)
         keyboard
     end
     
-    skeletonGT = zeros(size(I),class(I));
-    skeletonGT(bwdist(I_skel)<5) = 1;
+    skeletonGT = ones(size(I),class(I));
+    skeletonGT(bwdist(I_skel)<5) = 2;
     
     figure; imshow(labeloverlay(double(I1==1), skeletonGT));
 end
