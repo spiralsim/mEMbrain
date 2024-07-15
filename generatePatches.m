@@ -112,8 +112,10 @@ while patchesToGenerate > 0
            rotatedCenter(2) - patchSize/2:rotatedCenter(2) + patchSize/2-1);
        
        % Save patches
-       
-       selectedPatch_uint8 = uint8(255*(double(selectedPatch)-1)/maxLabel);
+       % Because the Train a Network tab expects black membranes on a white
+       % background, here we map high (membrane) to 0 brightness and low
+       % (non-membrane) to 255 brightness.
+       selectedPatch_uint8 = uint8(255*(1 - (double(selectedPatch)-1)/maxLabel));
        
        imwrite(selectedPatch_uint8, fullfile(labelPatchDirectory, strcat(labelPatchName, '_', num2str(totalPatchIndex, '%05d'), '.png')));
        imwrite(selectedInput, fullfile(inputPatchDirectory, strcat(inputPatchName, '_', num2str(totalPatchIndex, '%05d'), '.png')));
