@@ -7,6 +7,7 @@ function compute2dsegs(membranePath,mip,sections,outFolder,reduceMin,crop,ds)
 %%% reduceMin, the parameter for the H transform in imhmin(vol,reduceMin).
 %%% Larger values mean larger seeds by greater breakage of tunnels between local minima.
 %%% Crop, how much to crop from the sides of the space in mip0 coordinates 
+%%% ds, downsampling factor (ds = 1 corresponds to no downsampling)
 
 %%% Default is to run using overlapping windows to reduce memory usage.
 sparse_prob = 1;
