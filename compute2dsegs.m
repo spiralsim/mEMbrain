@@ -45,7 +45,7 @@ outFolder = sprintf('%s_%g_ds%d_cr%d',outFolder,reduceMin,ds,crop);
 
 overSegmentation = 0; % for compatibility with earlier versions
 
-out = fullfile('./../2dseg',outFolder);
+out = outFolder;
 
 
 fmt = 'png' %%% read
